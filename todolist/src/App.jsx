@@ -42,15 +42,12 @@ const App = () => {
   };
 
   const clickSwitchFunc = (id) => {
-    const switchComments = comment.map((comments) => {
-      if (comments.id === id) {
-        return {...comments, isDone: !comments.isDone}
-      } else {
-        return {...comment}
-      }
+    const switchComments = comment.map((item) => {
+      if (item.id === id) {
+         item.isDone = !item.isDone
+      } return item
     });
     setComment(switchComments);
-    console.log(switchComments.isDone);
   };
 
   return (
