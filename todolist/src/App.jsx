@@ -41,6 +41,7 @@ const App = () => {
     setComment(newComments);
   };
 
+  // 완료, 취소 기능
   const clickSwitchFunc = (id) => {
     const switchComments = comment.map((item) => {
       if (item.id === id) {
