@@ -20,11 +20,13 @@ header {
   justify-content: center;
   font-weight: bold;
   border: 1px solid #ddd;
+  border-radius: 10px;
   margin-top: 50px;
 }
 
 .add-form {
   background-color: #ddd;
+  border-radius: 10px;
   width: 500px;
   height: 250px;
   display: flex;
@@ -67,15 +69,31 @@ button:hover {
 
 .list-container {
   width: 100%;
-  border: 1px solid red;
+  padding-bottom: 20px;
 }
 
 .list-wrpper {
-  border: 1px solid blue;
   display: flex;
   gap: 15px;
 }
 
 .todo-container {
   width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-red {
+  border: 2px solid tomato;
+}
+
+.btn-red:hover {
+  background-color: tomato;
+  color: #fff;
 }

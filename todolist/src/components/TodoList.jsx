@@ -12,7 +12,7 @@ const TodoList = ({comment, isActive, clickRemoveFunc, clickSwitchFunc}) => {
                         </div>
                         <div className='btn-container'>
                         <button onClick={()=>clickRemoveFunc(item.id)}>삭제하기</button>
-                        <button onClick={()=>clickSwitchFunc(item.id)}>{isActive ? "취소" : "완료"}</button>
+                        <button className="btn-red" onClick={()=>clickSwitchFunc(item.id)}>{isActive ? "취소" : "완료"}</button>
                     </div>
                 </div>
             )
